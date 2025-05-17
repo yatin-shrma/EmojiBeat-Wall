@@ -1,3 +1,4 @@
+
 "use client";
 
 import type { EmojiVote } from "@/app/host/party/[partyId]/page"; // Assuming type is exported here
@@ -40,13 +41,13 @@ export default function VoteSummary({ votes, defaultChartColor = "hsl(var(--prim
       {topVotes.length > 0 && (
         <div style={{ width: '100%', height: 250 }}>
           <ResponsiveContainer>
-            <BarChart data={topVotes} layout="vertical" margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
+            <BarChart data={topVotes} layout="vertical" margin={{ top: 5, right: 20, left: 10, bottom: 5 }}> {/* Increased left margin */}
               <XAxis type="number" stroke="hsl(var(--muted-foreground))" fontSize={12} />
               <YAxis 
                 dataKey="emoji" 
                 type="category" 
                 stroke="hsl(var(--muted-foreground))" 
-                fontSize={16} 
+                fontSize={14} // Reduced font size
                 width={40}
                 tickFormatter={(value) => `${value}`} 
               />

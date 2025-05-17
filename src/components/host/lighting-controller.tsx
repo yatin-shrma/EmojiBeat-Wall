@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -45,7 +46,7 @@ export default function LightingController() {
 
   return (
     <div className="space-y-6">
-      <div>
+      <div className="px-3"> {/* Added horizontal padding here */}
         <Label htmlFor="brightness-slider" className="text-sm font-medium">Brightness: {brightness}%</Label>
         <Slider
           id="brightness-slider"
