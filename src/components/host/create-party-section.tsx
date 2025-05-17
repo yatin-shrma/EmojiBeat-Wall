@@ -1,4 +1,5 @@
-"use client";
+
+"use client"; // Added this directive
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -103,7 +104,7 @@ export default function CreatePartySection() {
                   placeholder="e.g., '80s retro disco night', 'chill beach vibes', 'futuristic cyberpunk'"
                   {...field}
                 />
-              </FormControl
+              </FormControl>
               <FormDescription>
                 Describe the vibe you're going for, and we can suggest a theme name!
               </FormDescription>
